@@ -1,4 +1,4 @@
-# Project 1 - Flex
+# Project 1 - Flix
 
 Flix is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
