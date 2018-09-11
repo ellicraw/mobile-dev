@@ -65,7 +65,7 @@ class Business: NSObject {
         let rating = dictionary["rating"] as? Double
         if rating != nil {
             switch rating {
-                case 1:
+                case 1.0:
                     self.ratingImage = UIImage(named: "stars_1")
                     break
                 case 1.5:
