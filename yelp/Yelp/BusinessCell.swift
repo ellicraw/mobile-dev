@@ -10,7 +10,7 @@ import UIKit
 
 class BusinessCell: UITableViewCell {
 
-    @IBOutlet weak var thumbImageView: UIView!
+    @IBOutlet weak var thumbImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var ratingImageView: UIImageView!
@@ -21,7 +21,7 @@ class BusinessCell: UITableViewCell {
     var business: Business! {
         didSet {
             nameLabel.text = business.name
-            //thumbImageView.setImageWithURL(business.imageURL)
+            thumbImageView.setImageWith(business.imageURL!)
             categoriesLabel.text = business.categories
             addressLabel.text = business.address
             reviewsCountLabel.text = "\(business.reviewCount!) Reviews"

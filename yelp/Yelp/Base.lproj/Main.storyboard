@@ -29,11 +29,11 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="136"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5oy-Q1-6jl" id="ES1-AM-tkA">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="135.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aUc-5i-b43">
-                                                    <rect key="frame" x="8" y="0.0" width="65" height="65"/>
+                                                    <rect key="frame" x="8" y="3" width="65" height="65"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="plg-Cs-LqO">
@@ -91,7 +91,7 @@
                                             <outlet property="nameLabel" destination="du8-I3-awI" id="feB-tF-UM1"/>
                                             <outlet property="ratingImageView" destination="plg-Cs-LqO" id="QEY-FC-YlZ"/>
                                             <outlet property="reviewsCountLabel" destination="3Vh-O7-oCO" id="y28-QM-zdb"/>
-                                            <outlet property="thumbImageView" destination="ES1-AM-tkA" id="Bx2-AB-Tuu"/>
+                                            <outlet property="thumbImageView" destination="aUc-5i-b43" id="DVh-1a-Eix"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
