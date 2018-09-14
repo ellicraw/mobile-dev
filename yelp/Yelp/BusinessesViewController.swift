@@ -8,15 +8,22 @@
 
 import UIKit
 
-class BusinessesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class BusinessesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
+
     @IBOutlet weak var tableView: UITableView!
+    
    
     
-    
     var businesses: [Business]!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let searchBar = UISearchBar()
+        searchBar.delegate = self
+        searchBar.sizeToFit()
+        self.navigationItem.titleView = searchBar
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -71,6 +78,8 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
         
         return cell
     }
+    
+    
     /*
      // MARK: - Navigation
      
