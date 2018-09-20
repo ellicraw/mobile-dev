@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  instagram
+//  chat
 //
-//  Created by Ellis Crawford on 9/17/18.
+//  Created by Ellis Crawford on 9/20/18.
 //  Copyright © 2018 Ellis Crawford. All rights reserved.
 //
 
