@@ -1,19 +1,22 @@
-
 //
-//  PhotoMapViewController.swift
+//  HomeViewController.swift
 //  instagram
 //
-//  Created by Ellis Crawford on 9/19/18.
+//  Created by Ellis Crawford on 9/20/18.
 //  Copyright © 2018 Ellis Crawford. All rights reserved.
 //
 
 import UIKit
 
-class PhotoMapViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    
+class HomeViewController: UIViewController {
+    @IBAction func didLogout(_ sender: Any) {
+    NotificationCenter.default.post(name: NSNotification.Name("didLogout"), object: nil)
+
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Do any additional setup after loading the view.
     }
 
