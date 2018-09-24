@@ -98,12 +98,55 @@
                                     <action selector="onSend:" destination="TLV-Cz-qQG" eventType="touchUpInside" id="coH-3y-pc8"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1k3-bV-AJu">
+                                <rect key="frame" x="0.0" y="125" width="375" height="542"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatCell" rowHeight="73" id="1T7-ea-ntP" customClass="ChatCell" customModule="chat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="73"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1T7-ea-ntP" id="pef-wM-ZLO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Messsge..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1p-yL-F55">
+                                                    <rect key="frame" x="16" y="23" width="343" height="27"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDj-7z-Kcb">
+                                                    <rect key="frame" x="16" y="0.0" width="79" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="sDj-7z-Kcb" firstAttribute="top" secondItem="pef-wM-ZLO" secondAttribute="top" constant="8" id="5Ix-h6-NFm"/>
+                                                <constraint firstItem="V1p-yL-F55" firstAttribute="top" secondItem="sDj-7z-Kcb" secondAttribute="bottom" constant="2" id="I8n-gG-sR7"/>
+                                                <constraint firstItem="sDj-7z-Kcb" firstAttribute="leading" secondItem="pef-wM-ZLO" secondAttribute="leading" constant="16" id="JNg-28-hcM"/>
+                                                <constraint firstAttribute="bottom" secondItem="V1p-yL-F55" secondAttribute="bottom" constant="8" id="YcD-6u-Vij"/>
+                                                <constraint firstItem="V1p-yL-F55" firstAttribute="leading" secondItem="pef-wM-ZLO" secondAttribute="leading" constant="8" id="cpm-ZY-Syo"/>
+                                                <constraint firstAttribute="trailing" secondItem="V1p-yL-F55" secondAttribute="trailing" constant="8" id="u1P-Mn-yr8"/>
+                                                <constraint firstAttribute="trailing" secondItem="sDj-7z-Kcb" secondAttribute="trailing" constant="8" id="xnh-db-fNI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="messageLabel" destination="V1p-yL-F55" id="pbk-yl-jeA"/>
+                                            <outlet property="usernameLabel" destination="sDj-7z-Kcb" id="IPI-2x-LJE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Chat" id="23D-ra-dOJ"/>
                     <connections>
                         <outlet property="chatMessageField" destination="Qi0-La-3zY" id="Am6-y9-tiJ"/>
+                        <outlet property="tableView" destination="1k3-bV-AJu" id="ClF-j3-6FF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cHj-4v-ReF" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -15,6 +15,7 @@
 		1A2432982153F8C900697FE1 /* chatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2432972153F8C900697FE1 /* chatUITests.swift */; };
 		1A50969E2153FCA6005256CF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A50969D2153FCA6005256CF /* LoginViewController.swift */; };
 		1A5096A021540867005256CF /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A50969F21540867005256CF /* ChatViewController.swift */; };
+		1A5096A421541A21005256CF /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5096A321541A21005256CF /* ChatCell.swift */; };
 		D40356903BF7EEB8A784A0C0 /* Pods_chatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3CFA8D4B54F1D5C0E151826 /* Pods_chatTests.framework */; };
 		D865EDF6381CEC961AB439AD /* Pods_chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9049E4309004023773E37DBE /* Pods_chat.framework */; };
 		E2418208D45AB12BBC89F5C2 /* Pods_chatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E48DA2EC1B964CC815D9F4 /* Pods_chatUITests.framework */; };
@@ -54,6 +55,7 @@
 		1A2432992153F8C900697FE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A50969D2153FCA6005256CF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1A50969F21540867005256CF /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		1A5096A321541A21005256CF /* ChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		4BBE39932964B0617FEAF6EB /* Pods-chatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-chatUITests/Pods-chatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6EDC7CEB3BAD11BFF98843D8 /* Pods-chatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chatUITests/Pods-chatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9049E4309004023773E37DBE /* Pods_chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +138,7 @@
 				1A2432802153F8C900697FE1 /* LaunchScreen.storyboard */,
 				1A2432832153F8C900697FE1 /* Info.plist */,
 				1A50969F21540867005256CF /* ChatViewController.swift */,
+				1A5096A321541A21005256CF /* ChatCell.swift */,
 			);
 			path = chat;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A50969E2153FCA6005256CF /* LoginViewController.swift in Sources */,
+				1A5096A421541A21005256CF /* ChatCell.swift in Sources */,
 				1A5096A021540867005256CF /* ChatViewController.swift in Sources */,
 				1A2432782153F8C900697FE1 /* AppDelegate.swift in Sources */,
 			);
