@@ -109,32 +109,35 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatCell" rowHeight="80" id="CVe-PY-cvH" customClass="ChatCell" customModule="parse_chat" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatCell" rowHeight="83" id="CVe-PY-cvH" customClass="ChatCell" customModule="parse_chat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CVe-PY-cvH" id="jSM-Kc-kLQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="82.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Message..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQc-fU-b40">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQc-fU-b40">
                                                     <rect key="frame" x="8" y="27" width="359" height="41.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDA-ev-B7S">
-                                                    <rect key="frame" x="8" y="0.0" width="93" height="23"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDA-ev-B7S">
+                                                    <rect key="frame" x="8" y="6" width="93" height="23"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="AQc-fU-b40" firstAttribute="top" secondItem="jSM-Kc-kLQ" secondAttribute="top" constant="8" id="85K-oe-wEg"/>
-                                                <constraint firstItem="AQc-fU-b40" firstAttribute="leading" secondItem="jSM-Kc-kLQ" secondAttribute="leading" constant="8" id="nZs-9M-M9d"/>
-                                                <constraint firstAttribute="bottom" secondItem="AQc-fU-b40" secondAttribute="bottom" constant="8" id="qtU-SS-DcR"/>
-                                                <constraint firstAttribute="trailing" secondItem="AQc-fU-b40" secondAttribute="trailing" constant="8" id="rLK-4c-jOV"/>
+                                                <constraint firstItem="AQc-fU-b40" firstAttribute="top" secondItem="jSM-Kc-kLQ" secondAttribute="top" constant="27" id="91N-In-uEF"/>
+                                                <constraint firstAttribute="trailing" secondItem="AQc-fU-b40" secondAttribute="trailing" constant="8" id="CWd-eR-JzF"/>
+                                                <constraint firstAttribute="bottom" secondItem="AQc-fU-b40" secondAttribute="bottom" constant="14" id="XdP-cN-GiR"/>
+                                                <constraint firstAttribute="trailing" secondItem="mDA-ev-B7S" secondAttribute="trailing" constant="274" id="fRH-Ys-X4C"/>
+                                                <constraint firstAttribute="bottom" secondItem="mDA-ev-B7S" secondAttribute="bottom" constant="53.5" id="kqv-Eq-G1z"/>
+                                                <constraint firstItem="AQc-fU-b40" firstAttribute="leading" secondItem="jSM-Kc-kLQ" secondAttribute="leading" constant="8" id="pIs-GE-ZE3"/>
+                                                <constraint firstItem="mDA-ev-B7S" firstAttribute="leading" secondItem="jSM-Kc-kLQ" secondAttribute="leading" constant="8" id="ror-vv-v8B"/>
+                                                <constraint firstItem="mDA-ev-B7S" firstAttribute="top" secondItem="jSM-Kc-kLQ" secondAttribute="top" constant="6" id="x0b-ik-o77"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

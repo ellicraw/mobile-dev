@@ -15,20 +15,19 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var messages: [PFObject] = []
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
-        tableView.delegate = self
+        tableView.dataSource = self
 
-        Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(self.onTimer), userInfo: nil, repeats: true)
-
+       
         // Auto size row height based on cell autolayout constraints
         tableView.rowHeight = UITableView.automaticDimension
         // Provide an estimated row height. Used for calculating scroll indicator
         tableView.estimatedRowHeight = 50
         // Do any additional setup after loading the view.
+        Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(self.onTimer), userInfo: nil, repeats: true)
+
     }
     @IBAction func onSend(_ sender: Any) {
         let chatMessage = PFObject(className: "Message")
@@ -44,15 +43,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ChatCell", for: indexPath) as! ChatCell
-        let chatMessage = messages[indexPath.row]
-        let text = chatMessage["text"] as! String
-        cell.messageLabel.text = text
-        if let user = chatMessage["user"] as? PFUser {
-            cell.usernameLabel.text = user.username
-        } else {
-            cell.usernameLabel.text = "🤖"
-        }
-
+        cell.messages = messages[indexPath.row]
         return cell
     }
     
