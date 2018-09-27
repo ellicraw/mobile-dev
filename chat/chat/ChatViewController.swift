@@ -10,7 +10,11 @@ import UIKit
 import Parse
 
 class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
     class Message: PFObject, PFSubclassing {
+        override class func initialize() {
+            self.registerSubclass()
+        }
         // properties/fields must be declared here
         // @NSManaged to tell compiler these are dynamic properties
         // See https://stackoverflow.com/questions/31357564/what-does-nsmanaged-do
@@ -73,7 +77,7 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.messageLabel.text = messageString
 //        cell.usernameLabel.text = usernameString
         
-        if let user = chatMessage["user"] as? PFUser {
+        if let user = chatMessage["username"] as? PFUser {
             // User found! update username label with username
             cell.usernameLabel.text = user.username
         } else {
