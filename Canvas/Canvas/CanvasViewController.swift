@@ -22,7 +22,7 @@ class CanvasViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        trayDownOffset = 160
+        trayDownOffset = 230
         trayUp = trayView.center
         trayDown = CGPoint(x: trayView.center.x ,y: trayView.center.y + trayDownOffset)
         // Do any additional setup after loading the view.
